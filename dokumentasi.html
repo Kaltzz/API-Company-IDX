@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dokumentasi API Contoh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        h2 {
+            color: #17A2B8;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dokumentasi API Contoh</h1>
+    
+    <h2>Endpoint: /api/users</h2>
+    <p>Deskripsi: Mengambil daftar pengguna.</p>
+    <h3>Metode: GET</h3>
+    <p>Contoh Permintaan:</p>
+    <pre>
+        GET /api/users HTTP/1.1
+        Host: example.com
+    </pre>
+    <p>Contoh Tanggapan:</p>
+    <pre>
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        [
+            {
+                "id": 1,
+                "name": "John Doe",
+                "email": "john.doe@example.com"
+            },
+            {
+                "id": 2,
+                "name": "Jane Smith",
+                "email": "jane.smith@example.com"
+            }
+        ]
+    </pre>
+
+    <h2>Endpoint: /api/users/{id}</h2>
+    <p>Deskripsi: Mengambil informasi pengguna berdasarkan ID.</p>
+    <h3>Metode: GET</h3>
+    <p>Parameter:</p>
+    <pre>
+        id (integer) - ID pengguna
+    </pre>
+    <p>Contoh Permintaan:</p>
+    <pre>
+        GET /api/users/1 HTTP/1.1
+        Host: example.com
+    </pre>
+    <p>Contoh Tanggapan:</p>
+    <pre>
+        HTTP/1.1 200 OK
+        Content-Type: application/json
+
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john.doe@example.com"
+        }
+    </pre>
+    
+    <!-- Tambahkan endpoint dan informasi lainnya sesuai dengan kebutuhan -->
+</body>
+</html>
